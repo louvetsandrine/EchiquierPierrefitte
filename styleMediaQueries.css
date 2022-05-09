@@ -1,0 +1,81 @@
+@media  (max-width: 766px) {
+
+    * {
+        font-family: 'Lato', sans-serif;
+        font-size: 12px;
+    }
+
+    #navbarNavDropdown {
+        padding-left: 15px;
+        width: 10px;
+        background-color: black;
+    }
+
+    .logo {
+        width: 10vw;
+    }
+
+    #menu.scrolled_mediaQueries {
+        background-color: black!important;
+        transition: background-color 100ms linear;
+        height: 15vw;
+    }
+
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .btn {
+        font-size: 13px;
+    }
+    
+    #map_index {
+        width: 70vw;
+        height: 50vw;
+    }
+
+    #map_contact {
+        width: 50vw;
+        height: 40vw;
+    }
+
+    .h2_evt {
+        font-size: 30px;
+    }
+
+    .h2 {
+        font-size: 25px;
+    }
+
+}
+
+
+/* Page Cours: Timetable */
+@media (max-width:700px) {
+
+    div#table_timeTable th, div#table_timeTable td{
+        font-size: 8px;
+        height: 35px;
+  }
+}
+
+@media (max-width: 450px) {
+    div #table_timeTable{
+        width:100%;
+        min-width: 100px;
+        max-width:400px;
+  }
+
+  div #table_timeTable table{
+        margin:0px;
+        width:100%;
+  }
+
+  .text_timeTable {
+    display: block;
+    font-style: italic;
+    font-size: 8px;
+}
+  
+}
