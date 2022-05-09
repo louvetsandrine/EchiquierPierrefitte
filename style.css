@@ -1,0 +1,415 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    line-height: 1.3;
+    background-color: #B50B27;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.block_header {
+    background-image: url(images/chess.jpg);
+    background-size: cover;
+    padding-top: 5vw;
+    height: 40vw;
+}
+
+.titel {
+    font-family: 'Katibeh', cursive;
+    font-size: 7vw;
+    font-weight: 800;
+    color:#fff;
+    padding-top: 2vw;
+    
+    text-shadow:   
+     -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     1px 1px 2px #B50B27,
+     1px 1px 3px #B50B27,
+     1px 1px 5px #141414,
+     1px 1px 7px #141414,
+     1px 1px 10px #141414,
+     1px 1px 12px #141414,
+     1px 1px 18px #141414;
+}
+
+.subtitle {
+    font-family: 'Handlee', cursive;
+    font-size: 5vw;
+    font-weight: 800;
+    margin-bottom: 20vw;
+    color:#fff;
+    text-shadow:   
+     -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+     1px 1px 0 #000,
+     1px 1px 2px #B50B27,
+     1px 1px 3px #B50B27,
+     1px 1px 5px #141414,
+     1px 1px 7px #141414,
+     1px 1px 10px #141414,
+     1px 1px 12px #141414,
+     1px 1px 18px #141414;
+}
+
+.h2 {
+    font-family: 'Katibeh', cursive;  
+    font-weight: 800;
+    font-size: 30px;
+    text-align: left;
+}
+
+#menu.background {
+    background-color: black;
+}
+
+#menu.scrolled {
+    background-color: black!important;
+    transition: background-color 100ms linear;
+    height: 100px;
+}
+
+.logo {
+    width: 100px;
+    padding-left: 2vw;
+}
+
+.button_menu {
+    color: white;
+    font-weight: 800;
+    margin-left: 2vw;
+    margin-top: 2vw; 
+    font-size: 3vw; 
+}
+
+a.link_menu, a.link_menu:visited {
+    color:#fff;
+    font-size: 14px;
+}
+
+a.link_menu:hover {
+    font-weight: 800;
+    color: #fff;
+}
+
+a.link_menu.disabled {
+    font-weight: 800;
+    color: grey;
+    text-shadow: none;
+}
+
+
+.photo {
+    width: 250px;
+}
+
+span {
+    font-weight: 800;
+}
+
+p {
+    text-align: justify;
+}
+
+sup {
+    color: #B50B27;
+    font-size: 12px;
+}
+
+.remark {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.btn:hover {
+    background-color: #B50B27;
+    color: #fff;
+}
+
+.btn {
+    color: #B50B27;
+    width: 150px;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn_collapse {
+    color: burlywood;
+    width: 180px;
+}
+
+.btn_collapse:hover {
+    background-color: burlywood;
+    color: #fff;
+}
+
+.bi-forward-fill {
+    font-size: 3vw;
+    vertical-align: middle;
+    padding-bottom: 0.5vw;
+    color: #B50B27;
+}
+
+.badge {
+    animation: clignote 2s linear infinite;
+  }
+
+  @keyframes clignote {  
+    50% { 
+        opacity: 0; 
+    }
+  }
+
+.bi-chevron-double-right {
+    margin-right: 0.4vw;
+    font-size: 8px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+}
+
+.fa-chess-pawn {
+    font-size: 6vw;
+    margin-left: -1.5vw;
+    color: #B50B27;
+    margin-top: 10vw;
+    text-shadow: 1px 1px white, 
+    -1px -1px #444;
+}
+  
+.h2::first-letter {
+    color: #B50B27;
+}
+
+.h3 {
+    font-weight: 800;
+    font-size: 16px;  
+}
+
+.block {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 50px black;
+}
+
+#map_index {
+    width: 60vw;
+    height: 40vw;
+    border-radius: 8px;
+}
+
+#map_contact {
+    width: 50vw;
+    height: 40vw;
+    border-radius: 8px;
+}
+
+.adress_contact {
+    font-weight: 800;
+}
+
+#arrow_scrollTop { 
+    position: fixed; 
+    width: 5vw; 
+    height:5vw; 
+    bottom: 5vw; 
+    right: 5vw; 
+} 
+
+#arrow_scrollTop .bi-arrow-up-square-fill { 
+    font-size: 4vw; 
+    color: gray;
+    margin-left: 2vw;
+
+}
+
+
+/* Formulaire - Style des placeholder */
+
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: grey;
+    font-style: italic;
+}
+
+.form-control:-moz-placeholder { /* Firefox 19+ */
+    color: gray;
+    font-style: italic;
+}
+
+.form-control::-ms-input-placeholder { /* IE 10+ */
+    color: gray;
+    font-style: italic;
+}
+
+.form-control::-moz-placeholder { /* Firefox 18- */
+    color: gray;
+    font-style: italic;
+}
+
+.link {
+    color: #000;
+    text-decoration: underline dotted #B50B27;
+    font-weight: 800;
+    padding-right: 1px;
+}
+
+.link:hover, .link_evt:hover, .link_social_media:hover {
+    color: #B50B27;
+}
+
+
+/* Page Cours: Card */
+
+.card {
+    border-color: #B50B27;
+}
+
+.card-title {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.cardTitle_subtitle {
+    font-size: 12px;
+    font-style: oblique;
+}
+
+.cardText_ul li {
+    font-size: 10x;
+}
+
+.card-footer {
+    font-weight: 800;
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* Footer */
+footer {
+    background-color: #000;
+}
+
+.copyright {
+    color: white;
+    font-size: 0.75vw;
+}
+
+
+/* Page Cours */
+.p_rate {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+/* Page Cours: Timetable */
+
+.text_timeTable {
+    display: none;
+}
+
+div #table_timeTable{     
+    width: 100%;
+    min-width: 400px;
+}
+
+div #table_timeTable table{
+    width: 100%;
+}
+
+div #table_timeTable th, div #table_timeTable td{
+    font-size: 10px;
+    height: 30px;
+    border-width: 1px;
+    border-style: solid; 
+    border-color: black;
+}
+
+
+/* Page Présentation */
+
+.photo_materiel {
+    width: 23vw;
+}
+
+
+/* Page Présentation: Carousel */
+
+.carousel-inner .carousel_img {
+    margin: auto;
+    width: 40vw;
+}
+
+.bi-chevron-left {
+    font-size: 4vw; 
+    color: black; 
+    margin-left: 25vw;
+}
+
+.bi-chevron-right {
+    font-size: 4vw; 
+    color: black; 
+    margin-right: 25vw;
+}
+
+
+/* Page Actualités*/
+.text_evt_date {
+    background-color: #B50B27;
+    color: #fff;
+    width: 100px;
+    text-align: center;
+}
+
+.link_evt {
+   
+    color: #000;
+    text-decoration: underline dotted #B50B27;
+    font-weight: 800;
+}
+
+.h2_evt {
+    font-family: 'Katibeh', cursive;  
+    font-weight: 800;
+    font-size: 40px;
+    color: #fff;
+    align-items: center;
+}
+
+.link_social_media {
+    text-decoration: none;
+    font-size: 2vw;
+    color: #000;
+    font-weight: 800;
+    padding-right: 0.75vw;
+}
+
+.text_social_media {
+    font-size: 12px;
+    font-style: italic;
+    align-items: center;
+    display: flex;
+}
+
+.text_social_media::before, .text_social_media::after {
+    border-top: 0.5px solid;
+    content: "";
+    flex: 1;
+    margin: 0 5vw;
+}
+
+.icon_social_media {
+    font-size: 12px;
+    margin-left: 8px; 
+}
+
+
