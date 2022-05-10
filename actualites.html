@@ -43,10 +43,400 @@
 
     <body class="vh-100 container-fluid">
         <header>
+            <nav class="navbar fixed-top navbar-expand-md" id="menu">
+                <a class="navbar-brand d-none d-md-block" href="index.html">
+                    <img src="images/logo.png" 
+                         alt="Logo du Club L'Echiquier de Pierrefitte"
+                         title="Logo du Club L'Echiquier de Pierrefitte" 
+                         class="logo align-text-top">
+                </a>
+                <button class="navbar-toggler button_menu"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  ☰ Menu
+                </button>
+                <a class="navbar-brand d-md-none" href="index.html">
+                    <img src="images/logo.png" 
+                         alt="Logo du Club L'Echiquier de Pierrefitte"
+                         title="Logo du Club L'Echiquier de Pierrefitte"
+                         class="logo align-text-top">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link link_menu" aria-current="page" href="index.html">
+                                Accueil
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link_menu disabled" href="#">
+                                Actualités 
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link_menu" href="presentation.html">
+                                Le club 
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link_menu" href="cours.html">
+                                Les cours
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link_menu" href="contact.html">
+                                Nous contacter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="text-center justify-content-center align-items-center block_header" id="top">
+                <p class="h1 titel text-center">
+                    L'ECH<i class="fas fa-chess-pawn"></i>QU<i class="fas fa-chess-pawn"></i>ER DE P<i class="fas fa-chess-pawn"></i>ERREF<i class="fas fa-chess-pawn"></i>TTE
+                </p>
+                <p class="subtitle text-center">
+                    Les échecs à portée de tous! 
+                </p>
+            </div>
         </header>
 
         <main>
-
+            <div class="row justify-content-center align-items-center mt-5 mb-3">
+                <div class="col-12 justify-content-center align-items-center">
+                    <p class="text-center h2_evt">
+                        Evénéments à venir 
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center block my-5">
+                <div class="col-12 justify-content-center align-items-center">
+                    <p class="h2 mt-4">
+                        Journée mondiale du Jeu d'échecs
+                    </p>
+                </div>
+                <div class="col-12 text-left">
+                    <p class="mx-2 mt-3 text_evt_date">
+                        <span>20/07/2022</span> 
+                    </p>
+                    <p class="mx-2  text_evt_subtitle">
+                        Rendez-vous au 
+                        <a class="link_evt" href="https://goo.gl/maps/8jT3UMEkW6kPSDQt5" target="_blank" title="Voir la localisation avec Google Maps">
+                            Zénith Nantes Métropole
+                        </a>
+                        , le 20 Juillet, de 9h à 20h pour célébrer le jeu de réflexion le plus populaire au monde
+                    </p>
+                </div>
+                <div class="col-sm-4 my-4 text-center d-none d-sm-block">
+                    <img src="images/MaximeVachierLagrave2.jpg" 
+                         class="img-fluid rounded align-middle photo" 
+                         alt="Maxime VACHIER-LAGRAVE, tout proche de récolter les fruits de sa préparation sur la Berlinoise."
+                         title="Maxime VACHIER-LAGRAVE, tout proche de récolter les fruits de sa préparation sur la Berlinoise.">
+                </div>
+                <div class="col-sm-8 col-12">
+                    <p class="mx-2 mt-3">
+                        Notre invité d'honneur, <span>Maxime Vachier-Lagrand</span>, viendra nous partager son expérience et dédicacera son livre 
+                        <span>
+                            <a class="link" 
+                               href="https://www.liseuse-hachette.fr/file/43562?fullscreen=1&editeur=Fayard#epubcfi(/6/2[html-cover-page]!/4/1:0)" 
+                               title="Lire quelques pages du livre 'Joueurs d'échec' sur le site de Hachette" 
+                                target="_blank">
+                                "Joueurs d'échecs"
+                            </a>
+                        </span>
+                    </p>
+                    <p class="mx-2 mt-3">
+                        Au programme, des conférences, des rencontres, des tournois avec des experts.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <p class="mx-2">
+                        <span> Entrée libre avec réservation obligatoire dans la limite des places disponibles </span>
+                    </p>
+                    <p class="mx-2 mt-3">
+                        Réservez vos places dès à présent en remplissant le formulaire ci-dessous ou en nous envoyant un mail à 
+                        <a class="link" href="mailto:contact@echiquierpierrefitte.fr" title="Ouvrir la boite mail">
+                            contact@echiquierpierrefitte.fr
+                        </a>
+                    </p>
+                </div>
+                <form class="row g-3" method="POST" action="envoi_inscription.php">
+                    <div class="col-sm-4">
+                        <label for="input_name" class="form-label">Nom<sup>*</sup>:</label>
+                        <input type="text" class="form-control" name="input_name" id="input_name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="input_lastname" class="form-label">Prénom<sup>*</sup>:</label>
+                        <input type="text" class="form-control" name="input_lastname" id="input_lastname" placeholder="Votre prénom" required>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="input_email" class="form-label">E-mail<sup>*</sup>:</label>
+                        <input type="email" class="form-control" name="input_email" id="input_email"  placeholder="Votre e-mail" required>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="input_tel" class="form-label">Téléphone<sup>*</sup>:</label>
+                        <input type="text" class="form-control" name="input_tel" id="input_tel" maxlength="14" placeholder="00-00-00-00-00"  pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="input_city" class="form-label">Ville<sup>*</sup>:</label>
+                        <input type="text" class="form-control" name="input_city" id="input_city" placeholder="Votre ville" required>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="input_place" class="form-label">Nombre de places<sup>*</sup>:</label>
+                        <select class="form-select" name="input_place" id="input_place" required>
+                            <option selected disabled value="">Choisir...</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="input_message" class="form-label">Commentaires (falcutatif):</label>
+                        <textarea class="form-control" id="input_message" name="input_message" placeholder="Votre commentaire" rows="3"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                En cochant cette case, je certifie avoir lu et accepté les 
+                                <a href="images/CGU.pdf" class="link" download target="_blank">
+                                    Conditions Générales d'Utilisation.
+                                </a>
+                                <sup>*</sup>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="remark">
+                            <sup>*</sup>: A renseigner obligatoirement
+                        </p>
+                    </div>
+                    <div class="col-12 mt-2 mb-4">
+                        <button type="submit" class="btn btn-sm">
+                            <i class="bi bi-chevron-double-right"></i>
+                            Envoyer
+                        </button>
+                    </div>
+                </form>
+                <div class="col-12 mt-5">
+                    <p class="mx-2 text-center my-0 text_social_media">
+                        Partager cet article
+                    </p>
+                </div>
+                <div class="col-12">
+                    <p class="mx-2 text-center">
+                        <a class="link_social_media" href="#" title="Facebook">
+                            <i class="bi bi-facebook icon_social_media"></i>
+                        </a>
+                        <a class="link_social_media" href="#" title="Twitter">
+                            <i class="bi bi-twitter icon_social_media"></i>
+                        </a>
+                        <a class="link_social_media" href="#">
+                            <i class="bi bi-envelope-fill icon_social_media" title="Email"></i>
+                        </a>
+                        <a class="link_social_media" href="#" title="Instagram">
+                            <i class="bi bi-instagram icon_social_media"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center my-5">
+                <div class="col-12 justify-content-center align-items-center">
+                    <p class="text-center h2_evt">
+                        Evénéments passés
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center block my-5">
+                <div class="col-12 justify-content-center align-items-center">
+                    <p class="h2 mt-4">
+                        Tournoi blitz de la nouvelle année
+                    </p>
+                </div>
+                <div class="col-12 text-left">
+                    <p class="mx-2 mt-3 text_evt_date">
+                        <span>08/01/2022</span> 
+                    </p>
+                </div>
+                <div class="col-sm-7 mb-4 col-12">
+                    <p class="mx-2">
+                        Afin de célébrer la nouvelle année, 52 joueurs et joueuses de tout âge et niveaux sont venus se confronter dans le traditionnel 
+                        blitz de la nouvelle année.
+                        Une centaine de spectateurs sont venus les encourager.
+                        La journée s'est achevée par la dégustation de la galette des rois faite par les bénévoles de l'association, le tout arrosé d'un bon coup de cidre. 
+                        Bravo à Germain qui a remporté le tournoi et... en prime a eu la fève! 
+                    </p>
+                </div>
+                <div class="col-sm-5 text-center col-12">
+                    <img src="images/blitzDebutAnnee.jpg" 
+                         class="img-fluid rounded align-middle photo" 
+                         alt="Deux joueurs d'échecs en pleine réflexion lord du Blitz" 
+                         title="Deux joueurs d'échecs en pleine réflexion lord du Blitz">
+                </div>
+                <div class="col-12 mt-5">
+                    <p class="mx-2 text-center my-0 text_social_media">
+                        Partager cet article
+                    </p>
+                </div>
+                <div class="col-12">
+                    <p class="mx-2 text-center">
+                        <a class="link_social_media" href="#" title="Facebook">
+                            <i class="bi bi-facebook icon_social_media"></i>
+                        </a>
+                        <a class="link_social_media" href="#" title="Twitter">
+                            <i class="bi bi-twitter icon_social_media"></i>
+                        </a>
+                        <a class="link_social_media" href="#">
+                            <i class="bi bi-envelope-fill icon_social_media" title="Email"></i>
+                        </a>
+                        <a class="link_social_media" href="#" title="Instagram">
+                            <i class="bi bi-instagram icon_social_media"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center block my-5">
+                <div class="col-12 justify-content-center align-items-center">
+                    <p class="h2 mt-4">
+                        Assemblée générale du Club
+                    </p>
+                </div>
+                <div class="col-12 text-left">
+                    <p class="mx-2 mt-3 text_evt_date">
+                        <span>16/12/2021</span> 
+                    </p>
+                </div>
+                <div class="col-sm-7 mb-4 col-12">
+                    <p class="mx-2">
+                        L'Assemblée Générale s'est réunie pour la première fois depuis 2020 en présentielle. 
+                        Le Président a pu dresser un premier bilan depuis la reprise de l'activité. 
+                        Cette AG a été aussi l'occasion de lancer plusieurs projets pour l'année à venir: la participation du club à la Coupe Nationale, le
+                        lancement d'un blog et la rénovation progressive des locaux.
+                        L'assemblée s'est terminée autour d'un buffet préparé par les bénévoles de l'association.
+                    </p>
+                </div>
+                <div class="col-sm-5 text-center col-12">
+                    <img src="images/assembleeGenerale.jpg" 
+                         class="img-fluid rounded align-middle photo" 
+                         alt="Salle accueillant l'Assemblée Générale du Club" 
+                         title="Salle accueillant l'Assemblée Générale du Club">
+                </div>
+                <div class="col-12 mt-5">
+                    <p class="mx-2 text-center my-0 text_social_media">
+                        Partager cet article
+                    </p>
+                </div>
+                <div class="col-12">
+                    <p class="mx-2 text-center">
+                        <a class="link_social_media" href="#" title="Facebook">
+                            <i class="bi bi-facebook icon_social_media"></i>
+                        </a>
+                        <a class="link_social_media" href="#" title="Twitter">
+                            <i class="bi bi-twitter icon_social_media"></i>
+                        </a>
+                        <a class="link_social_media" href="#">
+                            <i class="bi bi-envelope-fill icon_social_media" title="Email"></i>
+                        </a>
+                        <a class="link_social_media" href="#" title="Instagram">
+                            <i class="bi bi-instagram icon_social_media"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center block my-5">
+                <div class="col-12 justify-content-center align-items-center">
+                    <p class="h2 mt-4">
+                        Dixième festival de l'Echiquier de Pierrefitte
+                    </p>
+                </div>
+                <div class="col-12 text-left">
+                    <p class="mx-2 mt-3 text_evt_date">
+                        <span>20/11/2021</span> 
+                    </p>
+                </div>
+                <div class="col-sm-7 mb-4 col-12">
+                    <p class="mx-2">
+                        Le Festival a été une nouvelle fois une grande réussite. Il a été  
+                        accueilli dans la magnifique salle des fêtes mise à disposition gracieusement par la Ville de Pierrefitte. 
+                        2 500 euros de prix, une dizaine de pendules électroniques, et plusieurs jeux d'échecs ont été offerts aux vainqueurs des différents tournois ! 
+                    </p>
+                </div>
+                <div class="col-sm-5 text-center col-12">
+                    <img src="images/festival.jpg" 
+                            class="img-fluid rounded align-middle photo" 
+                            alt="Salle des fêtes vide avant le festival" 
+                            title="Salle des fêtes vide avant le festival">
+                    </div>
+                <div class="col-12 mt-5">
+                    <p class="mx-2 text-center my-0 text_social_media">
+                        Partager cet article
+                    </p>
+                </div>
+                <div class="col-12">
+                    <p class="mx-2 text-center">
+                        <a class="link_social_media" href="#" title="Facebook">
+                            <i class="bi bi-facebook icon_social_media"></i>
+                        </a>
+                        <a class="link_social_media" href="#" title="Twitter">
+                            <i class="bi bi-twitter icon_social_media"></i>
+                        </a>
+                        <a class="link_social_media" href="#">
+                            <i class="bi bi-envelope-fill icon_social_media" title="Email"></i>
+                        </a>
+                        <a class="link_social_media" href="#" title="Instagram">
+                            <i class="bi bi-instagram icon_social_media"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center block my-5">
+                <div class="col-12 justify-content-center align-items-center">
+                    <p class="h2 mt-4">
+                        Forum des Associations
+                    </p>
+                </div>
+                <div class="col-12 text-left">
+                    <p class="mx-2 mt-3 text_evt_date">
+                        <span>25/09/2021</span> 
+                    </p>
+                </div>
+                <div class="col-sm-7 mb-4 col-12">
+                    <p class="mx-2">
+                        L'Echiquier de Pierrefitte tenait son stand comme chaque année au forum des Associations de Pierrefitte pour présenter l'association et son activité.
+                        Le stand n'a jamais désempli, beaucoup de curieux se sont montrés intéressés. Espérons que nous leur avons donné envie de s'inscrire!
+                        Un grand merci à Bernard, Olivier, Nathalie et Jessica d'avoir tenu le stand pendant toute la journée.
+                    </p>
+                </div>
+                <div class="col-sm-5 text-center col-12">
+                    <img src="images/forumAssociations.jpg" 
+                         class="img-fluid rounded align-middle photo"
+                         alt="Forum des associations" 
+                         title="Forum des associations">
+                </div>
+                <div class="col-12 mt-5">
+                    <p class="mx-2 text-center my-0 text_social_media">
+                        Partager cet article
+                    </p>
+                </div>
+                <div class="col-12 mt-3">
+                    <p class="mx-3 text-center">
+                        <a class="link_social_media" href="#" title="Facebook">
+                            <i class="bi bi-facebook icon_social_media"></i>
+                        </a>
+                        <a class="link_social_media" href="#" title="Twitter">
+                            <i class="bi bi-twitter icon_social_media"></i>
+                        </a>
+                        <a class="link_social_media" href="#">
+                            <i class="bi bi-envelope-fill icon_social_media" title="Email"></i>
+                        </a>
+                        <a class="link_social_media" href="#" title="Instagram">
+                            <i class="bi bi-instagram icon_social_media"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div id="arrow_scrollTop"> 
+                <a href="#top">
+                    <i class="bi bi-arrow-up-square-fill"></i>
+                </a> 
+            </div>
         </main>
         <footer>
             <div class="row justify-content-center align-items-center">
@@ -56,8 +446,8 @@
                 <div class="col-12 copyright text-center pt-2 pb-4">
                     <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
                         <img src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" 
-                            alt="Licence Creative Commons"
-                            title="Licence Creative Commons">
+                             alt="Licence Creative Commons"
+                             title="Licence Creative Commons">
                     </a>
                 </div>
             </div>
