@@ -99,7 +99,84 @@
             </div>
         </header>
         
-        <main>
+        <main class="mx-5 my-3">
+            <div class="row justify-content-center align-items-center block my-5">
+                <div class=" col-12 justify-content-center align-items-center">
+                    <p class="h2 mt-4">
+                        Une question? Des suggestions? 
+                    </p>
+                </div>
+                <div class="col-12 text-left">
+                    <p class="mt-3 mb-2 mx-2">
+                        Ecrivez-nous à 
+                        <a class="link" href="mailto:contact@echiquierpierrefitte.fr" title="Ouvrir la boite mail">
+                            contact@echiquierpierrefitte.fr
+                        </a> 
+                        ou remplissez le formulaire ci-dessous:
+                    </p>
+                </div>
+                <form class="row g-3" method="POST" action="envoi_contact.php">
+                    <div class="col-md-12">
+                        <label for="input_object" class="form-label">Objet de votre demande<sup>*</sup></label>
+                        <select id="input_object" class="form-select" name="input_object">
+                            <option selected>Choisissez...</option>
+                            <option>Le Club</option>
+                            <option>Devenir membre</option>
+                            <option>Actualité</option>
+                            <option>Les cours</option>
+                            <option>Autres</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input_name"  class="form-label">Nom<sup>*</sup>:</label>
+                        <input type="text" class="form-control" id="input_name" name="input_name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input_lastname" class="form-label">Prénom<sup>*</sup>:</label>
+                        <input type="text" class="form-control" id="input_lastname" name="input_lastname" placeholder="Votre prénom" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="input_email" class="form-label">E-mail<sup>*</sup>:</label>
+                        <input type="email" class="form-control" id="input_email" name="input_email" placeholder="Votre e-mail" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="input_address" class="form-label">Adresse:</label>
+                        <input type="text" class="form-control" id="input_address" name="input_address" placeholder="Votre adresse">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input_zip" class="form-label">Code postal<sup>*</sup>:</label>
+                        <input type="text" class="form-control" id="input_zip" name="input_zip" placeholder="Votre code postal" maxlength="10" pattern="[0-9]{5}" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="input_city" class="form-label">Ville<sup>*</sup>:</label>
+                        <input type="text" class="form-control" id="input_city" name="input_city" placeholder="Votre ville" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="input_message" class="form-label">Votre message<sup>*</sup>:</label>
+                        <textarea class="form-control" id="input_message" name="input_message" placeholder="Votre message" rows="5"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="grid_check" required>
+                            <label class="form-check-label" for="grid_check">
+                                En cochant cette case, je certifie avoir lu et accepté les 
+                                <a href="images/CGU.pdf" class="link" target="_blank" title="Voir les CGU">Conditions Générales d'Utilisation. </a>
+                                </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="remark">
+                            <sup>*</sup>: A renseigner obligatoirement
+                        </p>
+                    </div>
+                    <div class="col-12 mt-2 mb-4">
+                        <button type="submit" class="btn">
+                            <i class="bi bi-chevron-double-right"></i>
+                            Envoyer
+                        </button>
+                    </div>
+                </form>
+            </div>
 
         </main>
 
