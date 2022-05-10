@@ -43,11 +43,317 @@
     
     <body class="vh-100 container-fluid">
         <header>
-
+            <nav class="navbar fixed-top navbar-expand-md" id="menu">
+                <a class="navbar-brand d-none d-md-block" href="index.html">
+                    <img src="images/logo.png" 
+                         alt="Logo du Club L'Echiquier de Pierrefitte"
+                         title="Logo du Club L'Echiquier de Pierrefitte"
+                         class="logo align-text-top">
+                </a>
+                <button class="navbar-toggler button_menu"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    ☰ Menu
+                </button>
+                <a class="navbar-brand d-md-none" href="index.html">
+                    <img src="images/logo.png" 
+                         alt="Logo du Club L'Echiquier de Pierrefitte" 
+                         title="Logo du Club L'Echiquier de Pierrefitte"
+                         class="logo align-text-top">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link link_menu" aria-current="page" href="index.html">
+                                Accueil
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link_menu" href="actualites.html">Actualités </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link_menu" href="presentation.html">
+                                Le club
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link_menu disabled" href="#">
+                                Les cours
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link_menu" href="contact.html">
+                                Nous contacter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="text-center justify-content-center align-items-center block_header" id="top">
+                <p class="h1 titel text-center">
+                    L'ECH<i class="fas fa-chess-pawn"></i>QU<i class="fas fa-chess-pawn"></i>ER DE P<i class="fas fa-chess-pawn"></i>ERREF<i class="fas fa-chess-pawn"></i>TTE
+                </p>
+                <p class="subtitle text-center">
+                    Les échecs à portée de tous! 
+                </p>
+            </div>
         </header>
 
-        <main>
-
+        <main class="mx-5 my-3">
+            <div class="row justify-content-center align-items-center block my-5">
+                <div class=" col-12 justify-content-center align-items-center">
+                    <p class="h2 pt-3">
+                        Les horaires
+                    </p>
+                </div>
+                <div class="col-12 text-left">
+                    <p class="mx-2 mt-3">
+                        En dehors des cours, des salles sont à votre disposition pour vous entrainer seul ou en groupe.
+                    </p>
+                </div>
+                <div id="table_timeTable" class="table-responsive align-middle text-center mb-5">
+                    <p class="mx-2 text_timeTable">
+                        Remarque: Faites défiler le tableau de gauche à droite
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Horaires</th>
+                                <th scope="col">Lundi</th>
+                                <th scope="col">Mardi</th>
+                                <th scope="col">Mercredi</th>
+                                <th scope="col">Jeudi</th>
+                                <th scope="col">Vendredi</th>
+                                <th scope="col">Samedi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">14h<br>15h</th>
+                                <td class="text-warning">Loisirs Adultes</td>
+                                <td class="text-danger">Cours Adultes</td>
+                                <td class="text-info">Découverte Jeunes</td>
+                                <td class="text-info">Découverte Jeunes</td>
+                                <td class="text-success">Perfectionnement Jeunes</td>
+                                <td class="text-primary">Initiation Jeunes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">15h<br>16h</th>
+                                <td class="text-warning">Loisirs Adultes</td>
+                                <td class="text-info">Découverte Jeunes</td>
+                                <td class="text-danger">Cours Adultes</td>
+                                <td class="text-success">Perfectionnement Jeunes</td>
+                                <td class="text-info">Découverte Jeunes</td>
+                                <td class="text-success">Perfectionnement Jeunes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">16h<br>17h</th>
+                                <td class="text-primary">Initiation Jeunes</td>
+                                <td class="text-info">Découverte Jeunes</td>
+                                <td class="text-primary">Initiation Jeunes</td>
+                                <td class="text-success">Perfectionnement Jeunes</td>
+                                <td class="text-primary">Initiation Jeunes</td>
+                                <td class="text-info">Découverte Jeunes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">17h<br>18h</th>
+                                <td class="text-primary">Initiation Jeunes</td>
+                                <td class="text-info">Découverte Jeunes</td>
+                                <td class="text-success">Perfectionnement Jeunes</td>
+                                <td class="text-primary">Initiation Jeunes</td>
+                                <td class="text-success">Perfectionnement Jeunes</td>
+                                <td class="text-primary">Initiation Jeunes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">18h<br>19h</th>
+                                <td class="text-warning">Loisirs Adultes</td>
+                                <td class="text-danger">Cours Adultes</td>
+                                <td class="text-warning">Loisirs Adultes</td>
+                                <td class="text-danger">Cours Adultes</td>
+                                <td class="text-warning">Loisirs Adultes</td>
+                                <td class="text-danger">Cours Adultes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">19h<br>21h</th>
+                                <td>Compétitions Adultes</td>
+                                <td>Compétitions Adultes</td>
+                                <td>Compétitions Adultes</td>
+                                <td>Compétitions Adultes</td>
+                                <td>Compétitions Adultes</td>
+                                <td>Compétitions Adultes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center block my-5">
+                <div class="col-12 justify-content-center align-items-center">
+                    <p class="h2 pt-3">
+                        Les tarifs
+                    </p>
+                    <p>
+                        Cotisation annuelle: <span>30 €</span>
+                    </p>
+                    <p class="p_rate text-center text-decoration-underline mx-2 mt-3">
+                        POUR LES JEUNES (jusqu'à 18 ans)
+                    </p>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-sm-4 col-12 mb-sm-0 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-info">
+                                        Découverte Jeunes
+                                    </h5>
+                                    <p class="cardTitle_subtitle text-center">
+                                        A partir de 5 ans
+                                    </p>
+                                    <p class="card-text justify-content-center align-items-center">
+                                        <ul class="cardText_ul">
+                                            <li>Licence B<sup>*</sup></li>
+                                            <li>1h de cours par semaine</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    110 €
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-12 mb-sm-0 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-primary">
+                                        Initiation Jeunes
+                                    </h5>
+                                    <p class="cardTitle_subtitle text-center">
+                                        A partir de 7 ans
+                                    </p>
+                                    <p class="card-text">
+                                        <ul class="cardText_ul">
+                                            <li>Licence B<sup>*</sup></li>
+                                            <li>1h de cours par semaine</li>
+                                            <li>Préparation et participation aux compétitions</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    125 €
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-12 mb-sm-0 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-success">
+                                        Perfectionnement Jeunes
+                                    </h5>
+                                    <p class="cardTitle_subtitle text-center">
+                                        A partir de 7 ans
+                                    </p>
+                                    <p class="card-text">
+                                        <ul class="cardText_ul">
+                                            <li>Licence A<sup>**</sup></li>
+                                            <li>1h de cours par semaine</li>
+                                            <li>Préparation et participation aux compétitions</li>
+                                            <li>Stages intensifs</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    150 €
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="p_rate text-center text-decoration-underline mx-2 mt-3">
+                        POUR LES ADULTES
+                    </p>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-sm-4 col-12 mb-sm-0 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-danger">
+                                        Cours Adultes
+                                    </h5>
+                                    <p class="cardTitle_subtitle text-center">
+                                        A partir de 18 ans
+                                    </p>
+                                    <p class="card-text justify-content-center align-items-center">
+                                        <ul class="cardText_ul">
+                                            <li>Licence B <sup>*</sup></li>
+                                            <li>1h de cours par semaine</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    125 €
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-12 mb-sm-0 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-warning">
+                                        Loisirs Adultes
+                                    </h5>
+                                    <p class="cardTitle_subtitle text-center">
+                                        A partir de 18 ans
+                                    </p>
+                                    <p class="card-text">
+                                        <ul class="cardText_ul">
+                                            <li>Licence A <sup>**</sup></li>
+                                            <li>Jeu libre</li>
+                                            <li>Cours à la demande</li>
+                                            <li>Préparation et participation aux compétitions</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    150 €
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-12 mb-sm-0 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">
+                                        Compétitions Adultes
+                                    </h5>
+                                    <p class="cardTitle_subtitle text-center">
+                                        A partir de 18 ans
+                                    </p>
+                                    <p class="card-text">
+                                        <ul class="cardText_ul">
+                                            <li>Licence A<sup>**</sup></li>
+                                            <li>2h de cours 2 fois par semaine</li>
+                                            <li>Préparation et participation aux compétitions</li>
+                                            <li>Stages intensifs</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    200 €
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-center">
+                        <div class="col-12">
+                            <p class="remark"> 
+                                <sup>*</sup> La Licence B peut être assimilée à une licence loisir.
+                                Elle permet d'être couvert par l'assurance de la FFE et de participer aux tournois en parties rapides (moins d'1h) et d'obtenir un classement rapide.
+                            </p>
+                            <p class="remark"> 
+                                <sup>**</sup> La licence A peut être assimilée à une licence sportive.
+                                Elle permet de participer à toutes les compétitions de la FFE, en particulier aux compétitions homologuées pour le classement elo et fide ainsi qu'aux compétitions par équipes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="arrow_scrollTop"> 
+                    <a href="#top">
+                        <i class="bi bi-arrow-up-square-fill"></i>
+                    </a> 
+                </div>
+            </div>
         </main>
 
         <footer>
