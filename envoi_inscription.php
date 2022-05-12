@@ -38,13 +38,7 @@
     echo $mail->ErrorInfo;  
   } 
   else{
-    echo "<html>
-            <head>
-                <title>Message Envoyé !</title>
-            </head>
-            <body onLoad=\"javascript:alert('Votre demande d'inscription a bien été transmise!');window.location='actualites.html'\">
-            </body>
-          </html>";
+    header('Location: https://www.echiquierpierrefitte.webee-france.fr/index.html');
   }
 
 ?>
