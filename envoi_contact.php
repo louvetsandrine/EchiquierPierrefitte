@@ -41,13 +41,7 @@
     echo $mail->ErrorInfo;  
   } 
   else{
-    echo "<html>
-            <head>
-              <title>Message Envoyé !</title>
-            </head>
-            <body onLoad=\"javascript:alert('Le message a bien été envoyé!');window.location='index.html'\">
-            </body>
-          </html>";
+    header('Location: https://www.echiquierpierrefitte.webee-france.fr/index.html');
   }
 
 ?>
